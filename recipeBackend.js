@@ -21,7 +21,7 @@ function searchByName(name){
 
 //Function to add new recipe
 function addRecipe(name, instruction, ingredient){
-    let newRecipe = new recipeData(name, instruction.split(","), ingredient.split(","));
+    let newRecipe = new recipeData(name, instruction, ingredient);
     data.push(newRecipe);
     return data[data.length -1];
 }
